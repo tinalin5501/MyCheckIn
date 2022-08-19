@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head> 
+
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" type = "text/css" href = "main.css">
+    <link rel = "stylesheet" type = "text/css" href = "chat.css">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id = "top">
+       <a href = "recentChat.html" > <img src = "imgs/back.png"> </a>
+    </div>
+
+    <h1 id = "big-title"> START A NEW CHAT </h1>
+
+    <div id = "chat-selections"> 
+        
+        <div id = "user-selections">
+            <p class = "title"> Select User </p>
+
+            <div class = "choices">
+                <button class = "choice"> professional </button>
+                <button class = "choice"> peer </button>
+                <button class = "choice"> anonymous </button>
+                <button class = "choice"> advisor </button>    
+            </div>
+
+        </div>
+
+        <div id = "other-selections">
+            <p class = "title"> Other Filters </p>
+
+            <div class = "choices">
+                <button class = "choice"> major </button>
+                <button class = "choice"> college </button>
+                <button class = "choice"> year </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id = "message">
+        <p class = "title"> New Message </p>
+        <textarea  rows = '15' cols = '40'>  </textarea>
+        <input id = "send" type = "submit" value = "SEND">
+    </div>
+
+    
+    <div class="navbar">
+        <a href="journal.html"><img id = "journal" class = "nav" src = "imgs/journal.png"></a>
+        <a href="recentChat.html" class="active"><img id = "chat" class = "nav" src = "imgs/chat.png"></a>
+        <a href="t2"><img id = "calendar" class = "nav" src = "imgs/calendar.png"></a>
+        <a href = "profile.html"><img id = "user" class = "nav" src = "imgs/user.png"></a>
+      </div>
+      
+
+</body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+
+let buttons = document.querySelectorAll(".choice")
+
+buttons.forEach((element)  => {
+    element.addEventListener('click', function() {
+        if (element.classList.contains('selected')) {
+            element.classList.remove('selected');
+        } else {
+            element.classList.add('selected');
+        }
+    })
+});
+
+
+</script>
+</html>

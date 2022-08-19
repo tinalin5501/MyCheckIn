@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+
+   <!-- fonts  -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script src="myjavascript.js"></script>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <link rel = "stylesheet" href = "journal.css">
+  </head>
+
+<body>
+
+  <div id = "top">
+    <a href = "index.html"> <img src = "imgs/back.png"> </a>
+ </div>
+
+    <form NAME="WordForm">  
+      <textarea = NAME="WordBox" id="wordbox" row = '20'></textarea>
+    </form>
+
+    <div id = "journalEntry">
+        <div class = "comments">
+                <textarea id = "content" cols = "42" rows = "25" placeholder = "Start your journal entry here"></textarea>
+          </div>
+    </div>
+
+    <div id = "buttons">
+      <INPUT TYPE=BUTTON value = "GENERATE" onClick="PickRandomWord(document.WordForm);" id="button" >
+      <button id = "submit" onclick = "isEmpty();clearDiv();"> SAVE </button>
+    </div>
+ 
+
+    <div id = "entries">
+          <h1>Journal Entries</h1>
+          <ul>
+            <div id = "comment-feed">
+              <li id = "first-entry">
+
+              </li>
+            </div>
+          </ul>
+    </div>
+    
+    <div class="navbar">
+      <a href="journal.html"><img id = "journal" class = "nav" src = "imgs/journal.png"></a>
+      <a href="recentChat.html" class="active"><img id = "chat" class = "nav" src = "imgs/chat.png"></a>
+      <a href="t2"><img id = "calendar" class = "nav" src = "imgs/calendar.png"></a>
+      <a href = "profile.html"><img id = "user" class = "nav" src = "imgs/user.png"></a>
+    </div>
+
+</body>
+</html>

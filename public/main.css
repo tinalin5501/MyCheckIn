@@ -1,0 +1,29 @@
+body { 
+  margin: 5% 5% 20% 5%;
+  background-color: white;
+
+}
+
+
+#content {
+  height: 200;
+  width: 500;
+  margin-left: 250px;
+  font-family: "Century Gothic",Verdana,sans-serif;
+
+}
+
+.navbar {
+  margin-top: 90px;
+  background: rgba(47, 142, 230, 0.2);
+  border-radius: 25px;
+}
+
+.nav {
+  padding: 10px 20px;
+  opacity: 40%;
+}
+
+#journal {
+  padding-left: 40px;
+}
